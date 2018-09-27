@@ -1,7 +1,9 @@
 module SongsHelper
 
   def display_artist
-    self.artist_name
+    if self.artist_name.present?
+      <%= link_to self.artist.name, artist_path(self.artist) %>
+    end
   end
 
 end
