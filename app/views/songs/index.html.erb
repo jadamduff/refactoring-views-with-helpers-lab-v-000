@@ -5,7 +5,7 @@
     <% if display_artist.present? %>
       <%= link_to display_artist, artist_path(song.artist) %>
     <% else %>
-      <%= link_to display_artist, edit_artist_path(song.artist) %>
+      <%= link_to "Add Artist", edit_song_path(song) %>
     <% end %>
   </li>
 <% end %>
