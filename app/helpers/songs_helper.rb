@@ -1,7 +1,9 @@
 module SongsHelper
 
   def display_artist
-    self.artist_name
+    if self.artist_id.present?
+      self.artist_name
+    end
   end
 
 end
